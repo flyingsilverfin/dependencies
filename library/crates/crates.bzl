@@ -25,7 +25,7 @@ def fetch_crates():
         manifests = ["@vaticle_dependencies//library/crates:Cargo.toml"],
         annotations = {
             "librocksdb-sys": [
-                crate.annotation(build_script_env = {"ROCKSDB_LIB_DIR": "."}),
+#                crate.annotation(build_script_env = {"ROCKSDB_LIB_DIR": "."}),
             ],
         },
         supported_platform_triples = [
