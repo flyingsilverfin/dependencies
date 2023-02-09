@@ -21,6 +21,7 @@ load("@rules_rust//crate_universe:defs.bzl", "crate", "crates_repository", "rend
 def fetch_crates():
     crates_repository(
         name = "crates",
+        cargo_config = "@vaticle_dependencies//library/crates:Cargo_config.toml",
         cargo_lockfile = "@vaticle_dependencies//library/crates:Cargo.lock",
         manifests = ["@vaticle_dependencies//library/crates:Cargo.toml"],
         annotations = {
