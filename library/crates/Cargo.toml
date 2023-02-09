@@ -20,6 +20,9 @@
 name = "vaticle-dependencies"
 version = "0.0.0"
 
+[net]
+git-fetch-with-cli = true   # use the `git` executable for git operations
+
 [lib]
 path = "" # ignored by cargo generate-lockfile
 
