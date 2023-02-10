@@ -17,4 +17,5 @@
 #
 
 [net]
-git-fetch-with-cli = true   # use the `git` executable for git operations
+# crate_universe's git binary does not find Windows SSH keys, so by default force using the OS git installation
+git-fetch-with-cli = true   # use the native `git` executable for git operations
