@@ -26,13 +26,16 @@ def fetch_crates():
         manifests = ["@vaticle_dependencies//library/crates:Cargo.toml"],
         annotations = {
             "librocksdb-sys": [
-#                crate.annotation(build_script_env = {"ROCKSDB_LIB_DIR": "."}),
+                crate.annotation(
+#                    build_script_env = {"ROCKSDB_LIB_DIR": "."}
+                    build_script_env = {"TARGET": "x86_64-pc-windows-clang"}
+                )
             ],
         },
         supported_platform_triples = [
             "aarch64-apple-darwin",
             "x86_64-apple-darwin",
-            "x86_64-pc-windows-clang",
+            "x86_64-pc-windows-msvc",
             "x86_64-unknown-linux-gnu",
         ],
     )
