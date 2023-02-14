@@ -30,7 +30,9 @@ def fetch_crates():
 #                    build_script_env = {"ROCKSDB_LIB_DIR": "."}
                     build_script_env = {
                         "TARGET": "x86_64-pc-windows-gnullvm",
-                        "CRATE_CC_NO_DEFAULTS": "true"
+                        "CRATE_CC_NO_DEFAULTS": "true",
+                        "CXXFLAGS": "-Og",
+                        "CFLAGS": "-Og"
                     }
                 )
             ],
