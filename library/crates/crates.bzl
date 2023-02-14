@@ -28,7 +28,7 @@ def fetch_crates():
             "librocksdb-sys": [
                 crate.annotation(
 #                    build_script_env = {"ROCKSDB_LIB_DIR": "."}
-                    build_script_env = {"TARGET": "x86_64-pc-windows-clang"}
+                    build_script_env = {"TARGET": "x86_64-pc-windows-gnullvm"}
                 )
             ],
         },
