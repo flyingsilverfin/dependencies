@@ -29,7 +29,7 @@ def fetch_crates():
                 crate.annotation(
 #                    build_script_env = {"ROCKSDB_LIB_DIR": "."}
                     build_script_env = {
-                        "TARGET": "x86_64-pc-windows-gnu",
+#                        "TARGET": "x86_64-pc-windows-gnu",
                     }
                 )
             ],
