@@ -23,7 +23,7 @@ import kotlin.io.path.notExists
 
 fun main(args: Array<String>) {
     val bazelWorkspaceDir = Paths.get(getEnv("BUILD_WORKSPACE_DIRECTORY"))
-    val githubToken = getEnv("NOTES_CREATE_TOKEN")
+    val githubToken = getEnv("NOTES_VALIDATE_TOKEN")
     if (args.size != 3) throw RuntimeException("org, repo, release notes file must be supplied")
 
     val org = args[0]
