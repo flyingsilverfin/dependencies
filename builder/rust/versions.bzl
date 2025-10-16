@@ -4,10 +4,10 @@
 
 load("@rules_rust//rust:repositories.bzl", "rust_register_toolchains", "rust_analyzer_toolchain_tools_repository")
 
-RUST_VERSION_TYPEDB = "1.81.0"
+RUST_VERSION_TYPEDB = "1.84.0"
 def rust_toolchain_versioned():
     rust_register_toolchains(
-        edition = "2021",
+        edition = "2024",
         extra_target_triples = [
             "aarch64-apple-darwin",
             "aarch64-unknown-linux-gnu",
